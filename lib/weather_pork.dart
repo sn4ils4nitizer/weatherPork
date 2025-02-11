@@ -2,7 +2,8 @@ import 'dart:convert' as convert;
 import 'dart:http/http.dart' as http;
 
 Future getWeather(String location) async {
-  var apiKey = '5b335f2bb16441bfb3804611250602';
+  var apiKey = '';
+
   var url = Uri.https('api.weather.com', '/v1/current.json', {
     'key': apiKey,
     'q': location,
